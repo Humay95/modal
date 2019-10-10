@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>modal</title>
+    <link rel="stylesheet" href="css/modal.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <button id="modalBtn" class="buttonn">Open</button>
+    <div id="modall" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="closeBtn">&times;</span>
+          <h1 class="header">Account Details</h1>
+        </div>
+        <div class="modal-body">
+          <div class="wrapper">
+            <div class="row">
+              <div class="col-4">
+                <div class="photo-icon">
+                  <img class="photo" src="images/photo.jpg" />
+                  <div class="icon-camera">
+                    <div class="all">
+                      <div>
+                        <i class="fas fa-camera"></i>
+                        <p>Upload your photo or drag and drop here</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ul class="settings">
+                  <li>
+                    <h2>
+                      <i class="fas fa-file-invoice">&nbsp;&nbsp;</i>Account
+                      Details
+                    </h2>
+                  </li>
+                  <li>
+                    <h2>
+                      <i class="fas fa-money-check">&nbsp;&nbsp;</i>Withdraw
+                      Methods
+                    </h2>
+                  </li>
+                  <li>
+                    <h2>
+                      <i class="fas fa-credit-card">&nbsp;&nbsp;</i>Payment
+                      Methods
+                    </h2>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-8">
+                <p>First name <span style="color: red;">*</span></p>
+                <input class="inputt" type="text" placeholder="Julia" />
+                <p>Last name <span style="color: red;">*</span></p>
+                <input class="inputt" type="text" placeholder="Miller" />
+                <p>Email <span style="color: red;">*</span></p>
+                <input
+                  class="inputt"
+                  type="text"
+                  placeholder="julia@outlook.com"
+                />
+                <p>Data of Birth (Optional)</p>
+                <div class="options">
+                  <select class="option">
+                    <option>10</option>
+                    <option>11</option>
+                  </select>
+                  <select class="option">
+                    <option>March</option>
+                    <option>April</option>
+                  </select>
+                  <select class="option">
+                    <option>1990</option>
+                    <option>1991</option>
+                  </select>
+                </div>
+                <p>Password<span style="color: red;">*</span></p>
+                <input class="inputt" type="password" placeholder="*******" />
+                <p>Repeat password <span style="color: red;">*</span></p>
+                <input class="inputt" type="password" placeholder="*******" />
+                <button class="addbutton">+ Add Product</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
